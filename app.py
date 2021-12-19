@@ -4,7 +4,18 @@ from bin.filters import apply_filter
 app = Flask(__name__)
 
 # Read the PIL document to find out which filters are available out-of the box
-filters_available = []
+filters_available = [
+    "blur",
+    "countour",
+    "detail",
+    "edge_enhance",
+    "edge_enhance_more",
+    "emboss",
+    "find_edges",
+    "sharpen",
+    "smooth",
+    "smooth_more",
+]
 
 
 @app.route("/", methods=["GET", "POST"])
