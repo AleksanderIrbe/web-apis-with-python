@@ -26,7 +26,7 @@ def index():
     """
     responce = {
         "filters_available": filters_available,
-        "usage": {"http_method": "POST", "URL" : "/<filter_available>/"},
+        "usage": {"http_method": "POST", "URL": "/<filter_available>/"},
     }
     return jsonify(responce)
 
